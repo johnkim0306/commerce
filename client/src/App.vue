@@ -30,7 +30,7 @@
               >
             </li>
             <li v-if="user.email != undefined" class="nav-item">
-              <router-link class="nav-link active" to="/create"
+              <router-link class="nav-link active" to="/Sales"
                 >productCreate
               </router-link>
             </li>

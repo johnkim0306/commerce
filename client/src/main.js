@@ -4,6 +4,8 @@ import App from './App.vue'
 import router from './router'
 import mixins from './mixins'
 import store from './store'
+import VueSweetalert2 from 'vue-sweetalert2';
+import 'sweetalert2/dist/sweetalert2.min.css';
 
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -20,4 +22,4 @@ const gAuthOptions = {
     popupType: "TOKEN"
 }
 
-app.use(router).mixin(mixins).use(store).use(vue3GoogleLogin, gAuthOptions).use(gAuthPlugin, { clientId: gauthClientId, scope: 'email', prompt: 'consent', fetch_basic_profile: false }).mount('#app')
+app.use(router).mixin(mixins).use(store).use(vue3GoogleLogin, gAuthOptions).use(VueSweetalert2).use(gAuthPlugin, { clientId: gauthClientId, scope: 'email', prompt: 'consent', fetch_basic_profile: false }).mount('#app')
