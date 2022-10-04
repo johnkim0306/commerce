@@ -2,7 +2,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Sold out</a>
+        <a class="navbar-brand" to="/">Sold out</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -22,11 +22,6 @@
             <li class="nav-item">
               <router-link class="nav-link active" to="/"
                 >productList</router-link
-              >
-            </li>
-            <li class="nav-item">
-              <router-link class="nav-link active" to="/detail"
-                >productDetail</router-link
               >
             </li>
             <li v-if="user.email != undefined" class="nav-item">

@@ -85,7 +85,7 @@
                 <button type="button" class="btn btn-lg btn-danger" @click="goToList">Cancel</button>
             </div>
             <div class="mb-3 row m-auto">
-                <button type="button" class="btn btn-lg btn-dark" @click="goToList">확인</button>
+                <button type="button" class="btn btn-lg btn-dark" @click="goToList">Confirm</button>
             </div>
         </div>
       </div>
@@ -113,7 +113,7 @@
     },
     mounted() {
       if(this.user.email == undefined) {
-        alert("로그인을 해야 이용할 수 있습니다.");
+        alert("Please log in.");
         this.$router.push({path:'/'}); 
       }
     },
